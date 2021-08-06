@@ -5,12 +5,7 @@
 	⁃	Schedule delivery dates for sales orders
 	⁃	Update invoice status of orders (Quote, Unpaid, Paid, Delivered, Invoiced)
 	⁃	Handle payment information
-	⁃	Add/refund/view payments on orders
-		⁃ Provide refunds
-		⁃ Partial/full refunds on orders
-		⁃ For returned items
-		⁃ For abiding by low price guarantee policy within 1 month
-		⁃ For defective items which may or may not be returned 
+	⁃	Add/refund/view payments on orders (refunds include partial/full refunds for returned items, low price guarantee, defective items, etc)
 
 # Project Definitions
 	⁃	Status/Invoice status of orders will follow stages:

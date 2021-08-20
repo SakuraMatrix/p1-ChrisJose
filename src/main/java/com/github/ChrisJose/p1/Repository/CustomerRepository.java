@@ -73,4 +73,20 @@ public class CustomerRepository {
         return customer;
     }
 
+    public Mono<Customer> deleteCustomer(int customerId){
+        return Mono.from(session.executeReactive("DELETE FROM p1.customerAccount WHERE customer_id =" + customerId))
+                .map(row -> new Customer(
+                        row.getInt("customer_id"),
+                        row.getString("first_name"),
+                        row.getString("last_name"),
+                        row.getString("phone_no"),
+                        row.getString("email"),
+                        row.getString("address"),
+                        row.getString("address2"),
+                        row.getString("city"),
+                        row.getString("state"),
+                        row.getString("zip")));
+    }
 }
+
+

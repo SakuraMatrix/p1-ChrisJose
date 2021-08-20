@@ -31,5 +31,10 @@ public class CustomerService {
         return customerRepository.createCustomer(customer);
     }
 
+    public Mono<Customer> deleteCustomer(String customerId) {
+        log.info("Executing deleteCustomer() method");
+        return this.customerRepository.deleteCustomer(Integer.parseInt(customerId));
+    }
+
 }
 

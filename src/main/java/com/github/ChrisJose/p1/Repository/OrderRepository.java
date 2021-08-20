@@ -1,6 +1,7 @@
 package com.github.ChrisJose.p1.Repository;
 import com.datastax.oss.driver.api.core.CqlSession;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
+import com.github.ChrisJose.p1.Domain.Customer;
 import com.github.ChrisJose.p1.Domain.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -61,7 +62,20 @@ public class OrderRepository {
         Flux.from(session.executeReactive(stmt)).subscribe();
         return order;
     }
+
+    public Mono<Order> deleteOrder(int orderId){
+        return Mono.from(session.executeReactive("DELETE FROM p1.orderAccount WHERE order_id =" + orderId))
+                .map(row -> new Order(
+                        row.getInt("order_id"),
+                        row.getInt("customer_id"),
+                        row.getString("comment"),
+                        row.getString("sales_associate"),
+                        row.getString("order_date"),
+                        row.getString("products"),
+                        row.getFloat("total_amt")));
     }
+
+}
 
 
 

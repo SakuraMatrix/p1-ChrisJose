@@ -1,4 +1,5 @@
 package com.github.ChrisJose.p1.Service;
+import com.github.ChrisJose.p1.Domain.Customer;
 import com.github.ChrisJose.p1.Domain.Order;
 import com.github.ChrisJose.p1.Repository.OrderRepository;
 import org.slf4j.Logger;
@@ -29,6 +30,11 @@ public class OrderService {
     public Order createOrder(Order order) {
         log.info("Executing createCustomer() method");
         return orderRepository.createOrder(order);
+    }
+
+    public Mono<Order> deleteOrder(String orderId) {
+        log.info("Executing deleteOrder() method");
+        return this.orderRepository.deleteOrder(Integer.parseInt(orderId));
     }
 
 

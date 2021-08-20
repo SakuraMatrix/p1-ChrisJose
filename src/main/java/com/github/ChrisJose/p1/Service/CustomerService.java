@@ -1,6 +1,6 @@
-package com.github.ChrisJose.posSystem.Model.Service;
-import com.github.ChrisJose.posSystem.Model.Domain.Customer;
-import com.github.ChrisJose.posSystem.Model.Repository.CustomerRepository;
+package com.github.ChrisJose.p1.Service;
+import com.github.ChrisJose.p1.Domain.Customer;
+import com.github.ChrisJose.p1.Repository.CustomerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;

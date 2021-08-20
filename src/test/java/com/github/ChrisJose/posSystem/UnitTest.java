@@ -1,6 +1,5 @@
 package com.github.ChrisJose.posSystem;
 
-import com.github.ChrisJose.posSystem.Model.Domain.Order;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

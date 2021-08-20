@@ -120,7 +120,7 @@
         <configuration>
             <archive>
                 <manifest>
-                    <mainClass>com.github.ChrisJose.posSystem.Model.App</mainClass>
+                    <mainClass>com.github.ChrisJose.p1.App</mainClass>
                 </manifest>
             </archive>
             <descriptorRefs>

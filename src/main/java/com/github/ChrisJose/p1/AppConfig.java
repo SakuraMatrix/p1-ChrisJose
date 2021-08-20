@@ -1,7 +1,7 @@
-package com.github.ChrisJose.posSystem.Model;
+package com.github.ChrisJose.p1;
 import com.datastax.oss.driver.api.core.CqlSession;
-import com.github.ChrisJose.posSystem.Model.Service.CustomerService;
-import com.github.ChrisJose.posSystem.Model.Service.OrderService;
+import com.github.ChrisJose.p1.Service.CustomerService;
+import com.github.ChrisJose.p1.Service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

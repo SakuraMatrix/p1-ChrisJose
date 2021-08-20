@@ -1,8 +1,8 @@
-package com.github.ChrisJose.posSystem.Model;
+package com.github.ChrisJose.p1;
 import java.net.URISyntaxException;
 
-import com.github.ChrisJose.posSystem.Model.Domain.Customer;
-import com.github.ChrisJose.posSystem.Model.Domain.Order;
+import com.github.ChrisJose.p1.Domain.Customer;
+import com.github.ChrisJose.p1.Domain.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

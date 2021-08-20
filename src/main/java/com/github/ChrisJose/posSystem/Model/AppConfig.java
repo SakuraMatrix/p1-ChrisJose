@@ -1,10 +1,11 @@
 package com.github.ChrisJose.posSystem.Model;
 import com.datastax.oss.driver.api.core.CqlSession;
+import com.github.ChrisJose.posSystem.Model.Service.CustomerService;
+import com.github.ChrisJose.posSystem.Model.Service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import reactor.core.publisher.Mono;
 import reactor.netty.DisposableServer;
 import reactor.netty.http.server.HttpServer;
 import java.net.URISyntaxException;
@@ -72,13 +73,4 @@ public class AppConfig {
     }
 }
 
-/*
-Path indexHTML = Paths.get(AppConfig.class.getResource("/customer.html").toURI());
-                                .get("/}", (request, response) ->
-                                        response.sendFile(indexHTML))
-                                .get("/customers/delete/{param}", (request, response) ->
-                                        response.send(customerService.deleteCustomer(request.param("param"))
-                                                .map(App::toByteBuf)//intToByteBuff
-                                                .log("https-server")))
- */
 

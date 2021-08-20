@@ -1,4 +1,6 @@
-package com.github.ChrisJose.posSystem.Model;
+package com.github.ChrisJose.posSystem.Model.Service;
+import com.github.ChrisJose.posSystem.Model.Domain.Order;
+import com.github.ChrisJose.posSystem.Model.Repository.OrderRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;

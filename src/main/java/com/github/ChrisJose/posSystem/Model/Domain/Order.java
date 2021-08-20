@@ -1,4 +1,4 @@
-package com.github.ChrisJose.posSystem.Model;
+package com.github.ChrisJose.posSystem.Model.Domain;
 
 public class Order {
 
@@ -10,7 +10,7 @@ public class Order {
     private String products;
     private float totalAmt;
 
-    Order(int orderId, int customerId, String comment, String salesAssociate, String orderDate, String products, float totalAmt) {
+    public Order(int orderId, int customerId, String comment, String salesAssociate, String orderDate, String products, float totalAmt) {
         this.orderId = orderId;
         this.customerId = customerId;
         this.comment = comment;

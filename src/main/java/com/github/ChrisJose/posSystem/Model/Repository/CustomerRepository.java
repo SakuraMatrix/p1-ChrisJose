@@ -1,6 +1,7 @@
-package com.github.ChrisJose.posSystem.Model;
+package com.github.ChrisJose.posSystem.Model.Repository;
 import com.datastax.oss.driver.api.core.CqlSession;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
+import com.github.ChrisJose.posSystem.Model.Domain.Customer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
@@ -73,16 +74,3 @@ public class CustomerRepository {
     }
 
 }
-
-/*
-    public Mono<Integer> deleteCustomer(int customerId) {
-        log.info("Deleting Customer from database");
-        Flux.from(session.executeReactive(
-                SimpleStatement.builder("DELETE FROM p1.customerAccount where customer_id = " + customerId)
-                        .addPositionalValue(customerId)
-                        .build()))
-                .subscribe();
-        return Mono.just(customerId);
-    }
-
-*/

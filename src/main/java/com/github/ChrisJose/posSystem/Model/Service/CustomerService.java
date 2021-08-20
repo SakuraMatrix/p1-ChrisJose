@@ -1,4 +1,6 @@
-package com.github.ChrisJose.posSystem.Model;
+package com.github.ChrisJose.posSystem.Model.Service;
+import com.github.ChrisJose.posSystem.Model.Domain.Customer;
+import com.github.ChrisJose.posSystem.Model.Repository.CustomerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
@@ -31,9 +33,3 @@ public class CustomerService {
 
 }
 
-/*
- public Mono<Integer> deleteCustomer(String customerId) {
-        log.info("Executing deleteCustomer() method");
-        return customerRepository.deleteCustomer(Integer.parseInt(customerId));
-    }
- */

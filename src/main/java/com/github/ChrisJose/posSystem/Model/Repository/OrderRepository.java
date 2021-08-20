@@ -1,6 +1,7 @@
-package com.github.ChrisJose.posSystem.Model;
+package com.github.ChrisJose.posSystem.Model.Repository;
 import com.datastax.oss.driver.api.core.CqlSession;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
+import com.github.ChrisJose.posSystem.Model.Domain.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;

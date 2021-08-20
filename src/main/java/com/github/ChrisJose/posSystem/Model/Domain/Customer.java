@@ -1,4 +1,4 @@
-package com.github.ChrisJose.posSystem.Model;
+package com.github.ChrisJose.posSystem.Model.Domain;
 
 public class Customer {
 

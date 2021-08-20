@@ -1,9 +1,8 @@
 package com.github.ChrisJose.posSystem.Model;
-import com.datastax.oss.driver.api.core.CqlSession;
-import com.datastax.oss.driver.api.querybuilder.SchemaBuilder;
-import com.datastax.oss.driver.api.querybuilder.schema.CreateKeyspace;
 import java.net.URISyntaxException;
 
+import com.github.ChrisJose.posSystem.Model.Domain.Customer;
+import com.github.ChrisJose.posSystem.Model.Domain.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -13,14 +12,10 @@ import io.netty.buffer.ByteBuf;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-import org.slf4j.LoggerFactory;
 import io.netty.buffer.Unpooled;
 
-import io.netty.channel.Channel;
-import reactor.core.Disposable;
 import reactor.netty.DisposableServer;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.net.URISyntaxException;
 import io.netty.buffer.ByteBufAllocator;
 
 

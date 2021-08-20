@@ -1,6 +1,5 @@
 
 import com.github.ChrisJose.posSystem.Model.App;
-import com.github.ChrisJose.posSystem.Model.CustomerRepository;
 import reactor.core.publisher.Mono;
 import reactor.netty.http.server.HttpServer;
 

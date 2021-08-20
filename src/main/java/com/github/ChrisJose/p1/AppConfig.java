@@ -67,12 +67,12 @@ public class AppConfig {
                                         response.send(orderService.get(request.param("param"))
                                                 .map(App::toByteBuf)
                                                 .log("http-server")))
-
+                                //Delete customer
                                 .get("/customers/delete/{param}", (request, response) ->
                                         response.send(customerService.deleteCustomer(request.param("param"))
                                                 .map(App::toByteBuf)
                                                 .log("http-server")))
-
+                                //Delete order
                                 .get("/orders/delete/{param}", (request, response) ->
                                         response.send(orderService.deleteOrder(request.param("param"))
                                                 .map(App::toByteBuf)
